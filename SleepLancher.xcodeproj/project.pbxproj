@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C44D1A217D98887002404C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1A117D98887002404C1 /* UIKit.framework */; };
+		3C44D1A417D98887002404C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1A317D98887002404C1 /* Foundation.framework */; };
+		3C44D1A617D98887002404C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1A517D98887002404C1 /* CoreGraphics.framework */; };
+		3C44D1AC17D98887002404C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C44D1AA17D98887002404C1 /* InfoPlist.strings */; };
+		3C44D1AE17D98887002404C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C44D1AD17D98887002404C1 /* main.m */; };
+		3C44D1B217D98887002404C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C44D1B117D98887002404C1 /* AppDelegate.m */; };
+		3C44D1B417D98887002404C1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C44D1B317D98887002404C1 /* Default.png */; };
+		3C44D1B617D98887002404C1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C44D1B517D98887002404C1 /* Default@2x.png */; };
+		3C44D1B817D98887002404C1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C44D1B717D98887002404C1 /* Default-568h@2x.png */; };
+		3C44D1BB17D98887002404C1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C44D1B917D98887002404C1 /* MainStoryboard.storyboard */; };
+		3C44D1BE17D98887002404C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C44D1BD17D98887002404C1 /* ViewController.m */; };
+		3C44D1C617D98887002404C1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1C517D98887002404C1 /* SenTestingKit.framework */; };
+		3C44D1C717D98887002404C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1A117D98887002404C1 /* UIKit.framework */; };
+		3C44D1C817D98887002404C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1A317D98887002404C1 /* Foundation.framework */; };
+		3C44D1D017D98887002404C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C44D1CE17D98887002404C1 /* InfoPlist.strings */; };
+		3C44D1D317D98887002404C1 /* SleepLancherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C44D1D217D98887002404C1 /* SleepLancherTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C44D1C917D98887002404C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C44D19617D98887002404C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C44D19D17D98887002404C1;
+			remoteInfo = SleepLancher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C44D19E17D98887002404C1 /* SleepLancher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepLancher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C44D1A117D98887002404C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C44D1A317D98887002404C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C44D1A517D98887002404C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C44D1A917D98887002404C1 /* SleepLancher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SleepLancher-Info.plist"; sourceTree = "<group>"; };
+		3C44D1AB17D98887002404C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C44D1AD17D98887002404C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C44D1AF17D98887002404C1 /* SleepLancher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SleepLancher-Prefix.pch"; sourceTree = "<group>"; };
+		3C44D1B017D98887002404C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C44D1B117D98887002404C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C44D1B317D98887002404C1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3C44D1B517D98887002404C1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3C44D1B717D98887002404C1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C44D1BA17D98887002404C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3C44D1BC17D98887002404C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3C44D1BD17D98887002404C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3C44D1C417D98887002404C1 /* SleepLancherTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepLancherTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C44D1C517D98887002404C1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3C44D1CD17D98887002404C1 /* SleepLancherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SleepLancherTests-Info.plist"; sourceTree = "<group>"; };
+		3C44D1CF17D98887002404C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C44D1D117D98887002404C1 /* SleepLancherTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepLancherTests.h; sourceTree = "<group>"; };
+		3C44D1D217D98887002404C1 /* SleepLancherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepLancherTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C44D19B17D98887002404C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C44D1A217D98887002404C1 /* UIKit.framework in Frameworks */,
+				3C44D1A417D98887002404C1 /* Foundation.framework in Frameworks */,
+				3C44D1A617D98887002404C1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C44D1C017D98887002404C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C44D1C617D98887002404C1 /* SenTestingKit.framework in Frameworks */,
+				3C44D1C717D98887002404C1 /* UIKit.framework in Frameworks */,
+				3C44D1C817D98887002404C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C44D19517D98887002404C1 = {
+			isa = PBXGroup;
+			children = (
+				3C44D1A717D98887002404C1 /* SleepLancher */,
+				3C44D1CB17D98887002404C1 /* SleepLancherTests */,
+				3C44D1A017D98887002404C1 /* Frameworks */,
+				3C44D19F17D98887002404C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C44D19F17D98887002404C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C44D19E17D98887002404C1 /* SleepLancher.app */,
+				3C44D1C417D98887002404C1 /* SleepLancherTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C44D1A017D98887002404C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C44D1A117D98887002404C1 /* UIKit.framework */,
+				3C44D1A317D98887002404C1 /* Foundation.framework */,
+				3C44D1A517D98887002404C1 /* CoreGraphics.framework */,
+				3C44D1C517D98887002404C1 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C44D1A717D98887002404C1 /* SleepLancher */ = {
+			isa = PBXGroup;
+			children = (
+				3C44D1B017D98887002404C1 /* AppDelegate.h */,
+				3C44D1B117D98887002404C1 /* AppDelegate.m */,
+				3C44D1B917D98887002404C1 /* MainStoryboard.storyboard */,
+				3C44D1BC17D98887002404C1 /* ViewController.h */,
+				3C44D1BD17D98887002404C1 /* ViewController.m */,
+				3C44D1A817D98887002404C1 /* Supporting Files */,
+			);
+			path = SleepLancher;
+			sourceTree = "<group>";
+		};
+		3C44D1A817D98887002404C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C44D1A917D98887002404C1 /* SleepLancher-Info.plist */,
+				3C44D1AA17D98887002404C1 /* InfoPlist.strings */,
+				3C44D1AD17D98887002404C1 /* main.m */,
+				3C44D1AF17D98887002404C1 /* SleepLancher-Prefix.pch */,
+				3C44D1B317D98887002404C1 /* Default.png */,
+				3C44D1B517D98887002404C1 /* Default@2x.png */,
+				3C44D1B717D98887002404C1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C44D1CB17D98887002404C1 /* SleepLancherTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C44D1D117D98887002404C1 /* SleepLancherTests.h */,
+				3C44D1D217D98887002404C1 /* SleepLancherTests.m */,
+				3C44D1CC17D98887002404C1 /* Supporting Files */,
+			);
+			path = SleepLancherTests;
+			sourceTree = "<group>";
+		};
+		3C44D1CC17D98887002404C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C44D1CD17D98887002404C1 /* SleepLancherTests-Info.plist */,
+				3C44D1CE17D98887002404C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C44D19D17D98887002404C1 /* SleepLancher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C44D1D617D98887002404C1 /* Build configuration list for PBXNativeTarget "SleepLancher" */;
+			buildPhases = (
+				3C44D19A17D98887002404C1 /* Sources */,
+				3C44D19B17D98887002404C1 /* Frameworks */,
+				3C44D19C17D98887002404C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepLancher;
+			productName = SleepLancher;
+			productReference = 3C44D19E17D98887002404C1 /* SleepLancher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C44D1C317D98887002404C1 /* SleepLancherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C44D1D917D98887002404C1 /* Build configuration list for PBXNativeTarget "SleepLancherTests" */;
+			buildPhases = (
+				3C44D1BF17D98887002404C1 /* Sources */,
+				3C44D1C017D98887002404C1 /* Frameworks */,
+				3C44D1C117D98887002404C1 /* Resources */,
+				3C44D1C217D98887002404C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C44D1CA17D98887002404C1 /* PBXTargetDependency */,
+			);
+			name = SleepLancherTests;
+			productName = SleepLancherTests;
+			productReference = 3C44D1C417D98887002404C1 /* SleepLancherTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C44D19617D98887002404C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Takuro SASAKI";
+			};
+			buildConfigurationList = 3C44D19917D98887002404C1 /* Build configuration list for PBXProject "SleepLancher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C44D19517D98887002404C1;
+			productRefGroup = 3C44D19F17D98887002404C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C44D19D17D98887002404C1 /* SleepLancher */,
+				3C44D1C317D98887002404C1 /* SleepLancherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C44D19C17D98887002404C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C44D1AC17D98887002404C1 /* InfoPlist.strings in Resources */,
+				3C44D1B417D98887002404C1 /* Default.png in Resources */,
+				3C44D1B617D98887002404C1 /* Default@2x.png in Resources */,
+				3C44D1B817D98887002404C1 /* Default-568h@2x.png in Resources */,
+				3C44D1BB17D98887002404C1 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C44D1C117D98887002404C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C44D1D017D98887002404C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C44D1C217D98887002404C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C44D19A17D98887002404C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C44D1AE17D98887002404C1 /* main.m in Sources */,
+				3C44D1B217D98887002404C1 /* AppDelegate.m in Sources */,
+				3C44D1BE17D98887002404C1 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C44D1BF17D98887002404C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C44D1D317D98887002404C1 /* SleepLancherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C44D1CA17D98887002404C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C44D19D17D98887002404C1 /* SleepLancher */;
+			targetProxy = 3C44D1C917D98887002404C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C44D1AA17D98887002404C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C44D1AB17D98887002404C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C44D1B917D98887002404C1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C44D1BA17D98887002404C1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		3C44D1CE17D98887002404C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C44D1CF17D98887002404C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C44D1D417D98887002404C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C44D1D517D98887002404C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C44D1D717D98887002404C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepLancher/SleepLancher-Prefix.pch";
+				INFOPLIST_FILE = "SleepLancher/SleepLancher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C44D1D817D98887002404C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepLancher/SleepLancher-Prefix.pch";
+				INFOPLIST_FILE = "SleepLancher/SleepLancher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3C44D1DA17D98887002404C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SleepLancher.app/SleepLancher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepLancher/SleepLancher-Prefix.pch";
+				INFOPLIST_FILE = "SleepLancherTests/SleepLancherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3C44D1DB17D98887002404C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SleepLancher.app/SleepLancher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepLancher/SleepLancher-Prefix.pch";
+				INFOPLIST_FILE = "SleepLancherTests/SleepLancherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C44D19917D98887002404C1 /* Build configuration list for PBXProject "SleepLancher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C44D1D417D98887002404C1 /* Debug */,
+				3C44D1D517D98887002404C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C44D1D617D98887002404C1 /* Build configuration list for PBXNativeTarget "SleepLancher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C44D1D717D98887002404C1 /* Debug */,
+				3C44D1D817D98887002404C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C44D1D917D98887002404C1 /* Build configuration list for PBXNativeTarget "SleepLancherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C44D1DA17D98887002404C1 /* Debug */,
+				3C44D1DB17D98887002404C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C44D19617D98887002404C1 /* Project object */;
+}
