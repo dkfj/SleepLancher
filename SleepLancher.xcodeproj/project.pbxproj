@@ -23,7 +23,6 @@
 		3C44D1C817D98887002404C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1A317D98887002404C1 /* Foundation.framework */; };
 		3C44D1D017D98887002404C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C44D1CE17D98887002404C1 /* InfoPlist.strings */; };
 		3C44D1D317D98887002404C1 /* SleepLancherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C44D1D217D98887002404C1 /* SleepLancherTests.m */; };
-		3C44D1DD17D999E1002404C1 /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C44D1DC17D999E1002404C1 /* libc++abi.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C44D1DD17D999E1002404C1 /* libc++abi.dylib in Frameworks */,
 				3C44D1A217D98887002404C1 /* UIKit.framework in Frameworks */,
 				3C44D1A417D98887002404C1 /* Foundation.framework in Frameworks */,
 				3C44D1A617D98887002404C1 /* CoreGraphics.framework in Frameworks */,

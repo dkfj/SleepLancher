@@ -11,19 +11,9 @@
 
 @implementation AppDelegate
 
-@synthesize isLockDevice = _isLockDevice;
-
-- (void)dealloc
-{
-    NSLog(@"dealloc");
-    [_window release];
-    [super dealloc];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSLog(@"didFinishLaunchingWithOptions");
-    _isLockDevice = NO;
+    [[UIApplication sharedApplication] terminateWithSuccess];
     return YES;
 }
 							
@@ -56,12 +46,8 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     NSLog(@"applicationWillTerminate");
-    [self cancelNotification];
-    [self sendNotification:@"ロック" alertKey:@"lock"];
-    [self sendNotification:@"ホーム" alertKey:@"home"];
-    NSLog(@"sleep");
-    [NSThread sleepForTimeInterval:1];
-    NSLog(@"sleep end");
+    //[self cancelNotification];
+    //[self sendNotification:@"ロック" alertKey:@"lock"];
 
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -71,7 +57,7 @@
 	// Get a reference to the private framework where the screen locking function resides
 	char *framework = "/System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices";
 	void *handle	= dlopen(framework, RTLD_NOW);
-	if (handle&&_isLockDevice)
+	if (handle)
 	{
 		// Get the symbol address for the screen locking function
 		void (*GSEventLockDevice)() = dlsym(handle, "GSEventLockDevice");
@@ -94,7 +80,7 @@
         NSLog(@"exist notification");
         NSString *value = [notification.userInfo objectForKey:@"Key"];
         if ([value isEqualToString:@"lock"]) {
-            _isLockDevice = YES;
+            //_isLockDevice = YES;
         }
         NSLog(@"key=%@",value);
     }
