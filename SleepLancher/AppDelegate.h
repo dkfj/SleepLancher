@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    BOOL _isLockDevice;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property BOOL isLockDevice;
 
 @end

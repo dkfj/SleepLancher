@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIApplicationDelegate> {
+    id _delegate;
+}
+@property (nonatomic, readonly) id delegate;
+- (IBAction)exitApplication:(id)sender;
+- (IBAction)suspendIphone:(id)sender;
+- (IBAction)sendNotification:(id)sender;
+- (IBAction)cancelNotification:(id)sender;
 
 @end
