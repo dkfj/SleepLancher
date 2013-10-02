@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#include <stdio.h>
 #include <dlfcn.h>
 
 @implementation AppDelegate
@@ -48,8 +49,13 @@
     NSLog(@"applicationWillTerminate");
     //[self cancelNotification];
     //[self sendNotification:@"ロック" alertKey:@"lock"];
+    int (*SBSSpringBoardServerPort)() = (int (*)())dlsym(RTLD_DEFAULT, "SBSSpringBoardServerPort");
+    int port = SBSSpringBoardServerPort();
+    void (*SBDimScreen)(int _port,BOOL shouldDim) = (void (*)(int _port,BOOL shouldDim))dlsym(RTLD_DEFAULT, "SBDimScreen");
+    void (*BKSDisplayServicesSetScreenBlanked)(BOOL blanked) = (void (*)(BOOL blanked))dlsym(RTLD_DEFAULT, "BKSDisplayServicesSetScreenBlanked");
+    BKSDisplayServicesSetScreenBlanked(1);
+    SBDimScreen(port,YES);
 
-    // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	self.window.rootViewController = [UIViewController new];
     [self.window makeKeyAndVisible];
@@ -64,6 +70,8 @@
 		if (GSEventLockDevice)
 		{
 			// Lock the screen
+            NSLog(@"Lock");
+            [UIDevice currentDevice].proximityMonitoringEnabled = YES;
 			GSEventLockDevice();
 		}
 		dlclose(handle);
@@ -109,6 +117,7 @@
     UIApplication* app = [UIApplication sharedApplication];
     [app cancelAllLocalNotifications];
 }
+
 
 
 @end

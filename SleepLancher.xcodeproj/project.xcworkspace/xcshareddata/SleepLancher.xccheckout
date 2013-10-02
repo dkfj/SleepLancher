@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>95AE70C0-6533-4DC2-B30F-919560A56F05</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SleepLancher</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E766E33-E245-43DC-B183-6F04BE41A9EB</key>
+		<string>file://localhost/Users/takuro/Dropbox/git/SleepLancher/</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SleepLancher.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E766E33-E245-43DC-B183-6F04BE41A9EB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>file://localhost/Users/takuro/Dropbox/git/SleepLancher/</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E766E33-E245-43DC-B183-6F04BE41A9EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E766E33-E245-43DC-B183-6F04BE41A9EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SleepLancher</string>
+		</dict>
+	</array>
+</dict>
+</plist>

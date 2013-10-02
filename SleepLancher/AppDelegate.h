@@ -12,5 +12,6 @@
 }
 
 @property (strong, nonatomic) UIWindow *window;
+- (void)sendNotification:(NSString *)alertBody alertKey:(NSString *)alertKey;
 
 @end
